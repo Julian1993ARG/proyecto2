@@ -1,0 +1,508 @@
+/* FUENTES*/
+@font-face {
+    font-family: "trebuchetMS";
+    src: url(fonts/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "BebasNeue";
+    src: url(fonts/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url(fonts/websymbols-regular-webfont.eot);
+    src: url(fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
+    url(fonts/websymbols-regular-webfont.woff) format('woff'),
+    url(fonts/TrebuchetMS.ttf) format('truetyoe'),
+    url(fonts/websymbols-regular-webfont.svg#WebSymbolRegular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Fin Fuentes*/
+
+/* Generales*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.clearfix {
+    float: none;
+    clear: both;
+}
+body {
+    background-image: url(/img/img/pattern.png);
+}
+.gear, .icon {
+    font-family: "WebSymbolsRegular";
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* cabecera*/
+#header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-family: "BebasNeue";
+    color: white;
+}
+.logo {
+    float: left;
+    width: 200px;
+    margin-top: 8px;
+    margin-left: 20px;
+    background-color: #37bcf9;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+
+.logo h3 {
+    font-size: 40px;
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 65px;
+    transition: all 300ms;
+
+}
+
+.logo .gear {
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+#menu {
+    float: right;
+    height: 70px;
+    background-color: transparent;
+
+}
+
+#menu ul li {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+#menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+#menu ul li a:hover {
+    color: #37bcf9;
+    transform: scale(1.22, 1.2);
+}
+
+/*banner */
+
+#banner {
+    width: 95.6%;
+    height: 100px;
+    border: 10px solid white;
+    box-shadow:  0px 0px 2px gray;
+    background-image: url(../img/img/bakbaner.png);
+    background-position: -200px -200px;
+    margin: 20px auto;
+}
+
+#banner h1 {
+    display: block;
+    width: 850px;
+    font-family: "bebasNeue";
+    color: white;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin: 27px auto;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
+}
+
+/* Tarjetas*/
+.card {
+    float: left;
+    width:205px ;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    overflow: hidden;
+    margin: 16px;
+    margin-top: 40px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card .icon {
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.card .category {
+    width: 100%;
+    height: 50px;
+    font-family: "TrebuChetMS";
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #00538c;
+    }
+
+.card .description {
+    text-align: center;
+    color:#00538c; 
+    font-family: "TrebuChetMS";
+}
+/* barra lateral*/
+#lateral {
+    width: 300px;
+    min-height: 1200px;
+    font-family: "TrebuchetMS";
+    margin: 20px;
+    float: right;
+}
+
+aside h3 {
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 49px;
+    background-image: url(/img/img/pxgray.png);
+    background-color: white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f ;
+    font-size: 30px;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+aside h3:first-child {
+    margin-top: 0px;
+}
+
+#serch {
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #ccc inset;
+}
+
+#lateral input[type="text"] {
+    width: 85%;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ccc;
+    transition: all 300ms;
+}
+
+#lateral input[type="button"],
+#lateral input[type="submit"] {
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #ccc;
+    color: #555;
+    padding-left: 6px;
+}   
+#lateral input:focus {
+    color: #555;
+    
+}
+
+.aside-box {
+    width: 85%;
+    height: 240px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-top: 2px;
+    background-color: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset , 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-left: 30px;
+    width: 82%;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-shadow: inset 1px 1px 1px #ccc;
+    border-radius: 5px;
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus {
+    color: #555;
+    box-shadow: 1px 1px 1px gray;
+}
+
+#login #user, 
+#login #password  {
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 6px;
+    height: 15px;
+}
+#login #password {
+    margin-left: 18px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#login input[type="submit"],
+#login input[type="button"],
+#login input[type="reset"],
+#login button {
+
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+    border: none;
+    border: 1px solid #156785;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "TrebuchetMS";
+    font-weight: lighter;
+    margin-left: 17px;
+    margin-bottom: 20px;
+    transition: 300ms all;
+}
+
+#login input[type="submit"]:hover,
+#login input[type="button"]:hover,
+#login input[type="reset"]:hover,
+#login button:hover {
+   box-shadow: 0px 0px 3px gray; 
+}
+
+#login a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    margin-left: 18px;
+    color: #555;
+    line-height: 17px;
+
+}
+#login a:hover{
+text-decoration: underline;
+color: #2f78bc;
+}
+#social {
+    height: 190px;
+}
+
+#social a {
+    display: block;
+    color: #333;
+    text-transform: none;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* articulos*/
+
+#article {
+    width: 860px;
+    float: left;
+}   
+
+#article h2 {
+    display: block;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    background: url(/img/img/pxgray.png), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f ;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#article article {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 40px auto;
+    padding-left: 10px;
+    font-family: "TrebuchetMS";
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 2px #ddd;
+}
+
+#article article h4 {
+    display: block;
+    font-size: 23px;
+    margin: 3px;
+
+}
+#article article h4 a {
+    text-decoration: none;
+    color: #00538c;
+}
+#article article h4 a:hover {
+    text-decoration: underline;
+    color: #00538c;
+}
+
+#article .data {
+    float: right;
+    background: #393d3f;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    margin: -1px;
+    padding: 3px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+
+}
+#article .data span {
+    margin: 5px;
+}
+
+#article article p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#blog {
+    height: 100px;
+    margin-top: 60px;
+    line-height: 100px;
+    text-align: center;
+   
+}
+
+#blog a {
+    display: block;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #00538c;
+    text-decoration: none;
+}   
+/* Footer */
+
+#footer {
+    width: 100%;
+    height: 470px;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+footer .wrap > div {
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+
+footer a{
+    text-decoration: none;
+    color: #37bcf9;
+    transition: all 300ms;
+
+}
+
+#footer h5 {
+    display: block;
+    background: url(/img/img/pxgray.png), white;
+    height: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul {
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+
+}
+
+#footer ul li {
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+#footer ul li a {
+    display: block;
+    height: 40px;
+}
+
+#footer iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img {
+    margin-bottom: 15px;
+}
+
+#footer #browsers img {
+    width: 45px;
+
+}
