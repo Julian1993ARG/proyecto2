@@ -222,6 +222,11 @@ body {
     margin-top: 40px;
     background-color: white;
     cursor: pointer;
+    transition: all 400ms;
+}
+.card:hover {
+    background-color: black;
+    color: white;
 }
 
 .card .icon {
@@ -244,10 +249,38 @@ body {
     color: #00538c;
     }
 
+    .card:hover .icon,
+    .card:hover .category {
+        color: white;
+        animation: Entrada 1s linear;
+    }
+    @keyframes Entrada {
+        from {
+            transform: translateY(-200%);
+        }
+        to {
+            transform: translateY(0%);
+        }
+        
+    }
+
 .card .description {
     text-align: center;
     color:#00538c; 
     font-family: "TrebuChetMS";
+}
+.card:hover .description {
+color: white;
+animation: EntradaDes 1s linear;
+}
+@keyframes EntradaDes {
+    
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
 /* barra lateral*/
 #lateral {
