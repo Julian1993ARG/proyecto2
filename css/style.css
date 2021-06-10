@@ -449,7 +449,31 @@ color: #2f78bc;
     margin-top: 10px;
     margin-bottom: 20px;
 }
+#social .TituRS {
+    display: block;
+    background-color: rgb(230, 220, 220);
+    width: 90px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    color: black;
+    position:absolute;
+    margin-top: -51px;
+    margin-left: 64px;
+    opacity: 0;
+    box-shadow: 0px 1px 1px #ccc;
+    letter-spacing: 1px;
+    transform: translateX(-64px);
+    transition: all 400ms;
+    font-weight: bold;
+}
 
+#social div:hover .TituRS {
+    transform: translateX(0px);
+    opacity: 1;
+}
 /* articulos*/
 
 #article {
