@@ -33,7 +33,7 @@
     clear: both;
 }
 body {
-    background-image: url(/img/img/pattern.png);
+    background-image: url(../img/img/pattern.png);
 }
 .gear, .icon {
     font-family: "WebSymbolsRegular";
@@ -296,7 +296,7 @@ aside h3 {
     width: auto;
     height: 45px;
     line-height: 49px;
-    background-image: url(/img/img/pxgray.png);
+    background-image: url(../img/img/pxgray.png);
     background-color: white;
     box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f ;
     font-size: 30px;
@@ -491,7 +491,7 @@ color: #2f78bc;
     font-size: 40px;
     font-weight: normal;
     letter-spacing: 2px;
-    background: url(/img/img/pxgray.png), white;
+    background: url(../img/img/pxgray.png), white;
     box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f ;
     margin: 0px auto;
     margin-top: 20px;
@@ -499,7 +499,7 @@ color: #2f78bc;
 }
 
 #article article {
-    width: 100%;
+    width: 99%;
     height: auto;
     border: 1px solid #ccc;
     margin: 40px auto;
@@ -552,9 +552,29 @@ color: #2f78bc;
     margin-top: 60px;
     line-height: 100px;
     text-align: center;
+    transition: 2s all;
    
 }
-
+#blog:hover{
+    background-color: #393d3f;
+    animation: neon infinite 5s ;
+    border: 10px grey solid ;
+}
+#blog:hover a {
+    color: white;
+}
+@keyframes neon {
+    0% { box-shadow: 2px 2px 1px grey;}
+    25% {border: black 10px solid;
+        box-shadow: 2px 2px 1px grey; }
+    50% { border: green 10px solid;
+        box-shadow: 2px 2px 1px grey;}
+    75% {border: 10px solid red;
+        box-shadow: 2px 2px 1px grey;}
+    100% {border: orange 10px solid;
+        box-shadow: 2px 2px 1px grey;
+    }
+}
 #blog a {
     display: block;
     font-family: "BebasNeue";
@@ -592,7 +612,7 @@ footer a{
 
 #footer h5 {
     display: block;
-    background: url(/img/img/pxgray.png), white;
+    background: url(../img/img/pxgray.png), white;
     height: 50px;
     text-align: center;
     letter-spacing: 2px;
@@ -603,7 +623,10 @@ footer a{
     border-radius: 5px;
     margin-bottom: 15px;
 }
-
+#footer ul li:hover a{
+    padding-left: 30px;
+    color: white;
+}
 #footer ul {
     text-align: left;
     margin: 20px;
