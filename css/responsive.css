@@ -1,3 +1,91 @@
 @media (max-width:1250px) {
+    .wrap {
+        width: 90%;
+
+    }
+    #banner h1 {
+        font-size: 35px;
+        text-align: center;
+        margin: 33px auto;
+    }
+    .card {
+        width: 17%;
+        margin: 1.4%;
+    }
+    .card p {
+        text-align: center;
+        margin: 0px auto;
+        display: block;
+        width: 90%;
+    }
+    #article {
+        width: 65%;
+    }
+    #footer .wrap > div{
+        width: 25%;
+    }
+
+    #footer #browsers img {
+        width: 14%;
+    }
+    #footer h5 {
+        font-size: 30px;
+    }
+    }
+     
+    @media (max-width:1080px) {
+        .card {
+            width: 16.5%;
+            margin: 1.64%;
+        }
+        .card .category {
+            font-size: 17px;
+        }
+        .card .description {
+            font-size: 14px;
+        }
+        #article {
+            width: 61%;
+        }
+    }
+
+    @media (max-width:970px) {
+        .card {
+            width: 16%;
+            margin: 1.88%;
+        }
+        #article {
+            width: 59%;
+        }
+        #footer h5 {
+            font-size: 22px;
+        }
+    }
     
+    @media (max-width:925px) {
+        .card {
+            width: 16%;
+            margin: 1.88%;
+        }
+        #lateral {
+            width: 30%;
+
+        }
+        #login input[type="submit"], #login input[type="button"], #login input[type="reset"], #login button {
+            width: 33%;
+            height: 31px;
+            font-size: 13px;
+        }
+        #article {
+            width: 65%;
+        }
+        #footer .wrap > div{
+            width: 23%;
+        }
+        #footer img {
+            width: 92%;
+        }
+        #footer ul li a {
+            font-size: 18px;
+        }
     }
